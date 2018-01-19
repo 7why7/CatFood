@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>购买结算</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/goBuy.css">
+ </head>
+ <body>
+	<div class="main">
+	<div style="height:80px"><header id="header"></header></div>
+<!-- 	section第一部分 -->
+	<section class="section_1">
+		<div class="s1_top">
+			<a href="index.html">首页</a>
+			<a href="product.html">相关产品</a>
+			<a href="">私人订制</a>
+		</div>
+		<div id="navlist">
+    <ul>
+        <li class="navlist_blue_left"></li>
+        <li class="navlist_blue">确认订单信息</li>
+        <li class="navlist_blue_arro"><canvas id="canvas_blue" width="20" height="38"></canvas>
+        </li>
+        <li class="navlist_gray">支付订单<b></b></li>
+        <li class="navlist_gray_arro"><canvas id="canvas_gray" width="20" height="38"></canvas>
+        </li>
+        <li class="navlist_gray">支付完成<b></b></li>
+        <li class="navlist_gray_right"></li>
+    </ul>
+	</div>
+	<!--订单确认-->
+	<div id="container" class="clear">
+    <!--收货地址-->
+		<div class="adress_choice">
+			<p class="pAdress">选择收货地址</p>
+
+			<div id="addresId1">
+				<i class="address_name">
+					丁丁 武汉
+				</i>
+				<i class="user_address">
+					武汉市 青山区 汉口火车站 139366668888
+				</i>
+        </div>
+        <a href="#">
+            更多地址 &gt;&gt;
+        </a>
+    </div>
+	</section>
+<!-- section第二部分 -->
+	<section class="section_2">
+		<p class="se2P">确认商品信息</p>
+		<ul class="se2_topul">
+			<li class="allCheck" style="background:#F7D8BB;font-size:14px;">选择商品</li>
+			<li class="proMsg" style="background:#F7D8BB;font-size:14px;"><div>商品信息</div></li>
+			<li class="price" style="background:#F7D8BB;font-size:14px;">单价(元)</li>
+			<li class="count" style="background:#F7D8BB;font-size:14px;">购买数量</li>
+			<li class="priceCount" style="background:#F7D8BB;font-size:14px;">金额(元)</li>
+			<li class="caozuo" style="background:#F7D8BB;font-size:14px;">操作</li>
+		</ul>
+		<div class="getProDetl">
+<!--
+		<ul class="se2_topul">
+			<li class="allCheck">全选</li>
+			<li class="proMsg"><div>商品信息</div></li>
+			<li class="price">单价(元)</li>
+			<li class="count">数量</li>
+			<li class="priceCount">金额</li>
+			<li class="caozuo">操作</li>
+		</ul>
+-->
+		</div>
+		<div class="se2_botdiv">
+			<span class="back_cart"><a href="">←返回购物车</a></span>
+			<span class="check_count">
+				已选<span class="jiesuan_count">0</span>件商品
+			</span>
+			<span class="all_price_count">
+				合计(不含运费)：<span>0.00</span>元
+			</span>
+			<span class="payDel">
+				<a href="" id="payDelAll">确认并付款</a>
+			</span>
+		</div>
+	</section>
+	<section class="footSection">
+		<div class="myAddFoot">
+			<div>
+				<img src="img/tool/oneBottom.png" alt="">
+				<p>品质保障</p>
+			</div>
+			<div>
+				<img src="img/tool/twoBottom.png" alt="">
+				<p>私人订制</p>
+			</div>
+			<div>
+				<img src="img/tool/treeBottom.png" alt="">
+				<p>家庭特供</p>
+			</div>
+			<div>
+				<img src="img/tool/fourBottom.png" alt="">
+				<p>专属特权</p>
+			</div>
+		</div>
+		<div class="myZs">
+			<img src="img/tool/360.png" alt="">
+			<img src="img/tool/bhdw.png" alt="">
+			<img src="img/tool/chengxin.png" alt="">
+			<img src="img/tool/cqgs.png" alt="">
+			<img src="img/tool/shiming.png" alt="">
+			<img src="img/tool/tx.png" alt="">
+		</div>
+	</section>
+	<footer id="footer"></footer>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+<!-- 	<script src="js/login.js"></script> -->
+	<script src="js/goBuy.js"></script>
+ </body>
+</html>

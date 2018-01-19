@@ -1,0 +1,263 @@
+.lit_main{	
+	margin:0 auto;
+	width:1200px;
+/*	border:1px solid red;*/
+	background:white;
+}
+/****************楼层灯div****************/
+#lift{
+	position:fixed;
+	top:300px;
+/*	border:1px solid red;*/
+	z-index:10;
+	display:none;
+	border: 2px solid #FFDF8F;
+}
+#lift .lift_item{
+	width:50px;
+	height:50px;
+	line-height:50px;
+	background: #FBF3E3;
+}
+#lift .lift_item_on{
+	width:50px;
+	height:50px;
+	line-height:50px;
+	background: #FFDF8F;
+	transition: all .4s linear;
+}
+/***********楼层section_1,,轮播***********/
+.section_1{
+	width:1200px;
+	height:400px;
+	overflow:hidden;
+}
+#banner{
+	width:6000px;
+	height:400px;
+	position:relative;
+}
+.section_1>#banner>a>img{
+	width:1200px;
+	height:400px;
+	float:left;
+}
+
+/***轮播---小圆点`左右键*/
+#little_r{
+	position:relative
+}
+#little_r>#banner_ul{
+	position: absolute;
+    top: -23px;
+    left: 553px;
+}
+#banner_ul>li{
+	width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+/*    border: 1px solid red;*/
+    z-index: 12;
+    float: left;
+    margin: 0 6px;
+}
+#banner_ul>li.hover{background:#7A2E40}
+
+#arrow_left,#arrow_right{
+	width:20px;
+	height:25px;
+	position:absolute;
+}
+#arrow_left:hover,#arrow_right:hover{
+	background:#7A2E40;
+	opacity:0.3;
+}
+#arrow_left{
+	top:-220px;
+	left:20px;
+}
+#arrow_right{
+	top:-220px;
+	right:20px;
+}
+/************section2部分****************/
+.main .s2_top,.s2_bot{
+	display:flex;
+	justify-content:center;
+	margin:20px 0;
+}
+.main .s2_top a{
+	margin:10px 20px;
+}
+.lit_main .s2_bot .s2_bot_left{
+	margin:0 20px;
+}
+.lit_main .s2_bot .s2_bot_right{
+	margin:0 20px;
+}
+.section_2 .s2_bot_right a{
+	display:block;
+}
+.section_2 .s2_bot_right .top{
+	margin-bottom:42px;
+}
+.s2_top{
+	position:relative;
+/*	display:block;*/
+} 
+.s2_txt_1{
+	position: absolute;
+    font-size: 20px;
+    top: 231px;
+    left: 285px;
+    color: white;
+}
+.s2_txt_2{
+	position: absolute;
+    font-size: 20px;
+    top: 231px;
+    right: 305px;
+    color: white;
+}
+.s2_bot{
+	position:relative;
+}
+.s2_txt_3{
+	position: absolute;
+    font-size: 20px;
+    top: 231px;
+    left: 285px;
+    color: white;
+}
+.s2_txt_4{
+	position: absolute;
+    font-size: 20px;
+    top: 100px;
+    right: 325px;
+    color: white;
+}
+.s2_txt_5{
+	position: absolute;
+    font-size: 20px;
+    top: 345px;
+    right: 325px;
+    color: white;
+}
+#f1:after,#f1:before{
+	content: "";
+    background: #E94E65;
+    width: 489px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+#f2:after,#f2:before{
+	content: "";
+    background: #E94E65;		/*f2的边线*/
+    width: 489px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+#f3:after,#f3:before{
+	content: "";
+    background: #E94E65;		/*f3的边线*/
+    width: 489px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+.section_2 img{
+	transition:all .5s linear;
+}
+.section_2 img:hover{
+	transform:scale(1.1);
+}
+/*****************section_3部分***********************/
+.section_3{
+/*	border:1px solid red;*/
+}
+.section_3 img{
+	transition:all .5s linear;
+}
+.section_3 img:hover{
+	transform:scale(1.1);
+}
+.section_3>div>a>img{
+	width: 270px;
+    height: 224px;
+	float:left;
+}
+.section_3 .s3_tool{
+	float:left;
+	height:270px;
+	width:270px;
+	border: 1px solid #FFDF8F;
+	overflow:hidden;
+	margin-left: 94px;
+    margin-top: 30px;
+	margin-bottom:30px;
+}
+.section_3 .s3_jiesao{
+	height: 200px;
+    width: 270px;
+    float: left;
+    transition: all .5s linear;
+    background: #FFDF8F;
+    color: black;
+    opacity: 0.9;
+}
+.section_3 .s3_jiesao:hover{
+	margin-top:-150px
+}
+/**********section_4部分******/
+.section_4{
+/*	display:flex;*/
+/*	justify-content:center;*/
+/*	border:1px solid red;*/
+}
+.section_4 .se4_img img{
+	width:200px;
+	height:150px;
+}
+
+.section_4 .se4{
+    margin: 0 100px;
+    margin-top: 40px;
+	float:left;
+}
+.section_4 .se4 .se4_img{
+	float:left;
+	width:200px;
+	height:150px;
+}
+.section_4 .se4 .se4_txt{
+	float:left;
+	width:200px;
+	height:150px;
+}
+/*section高度设置，为了方便亮灯*/
+.section_2,.section_3,.section_4{
+	width:1200px;
+/*	border:1px solid red;*/
+	background:#FFFEFB;
+}
+.section_3{
+	height:680px;
+}
+.section_4{
+	height:600px;
+}
+
+#headerxxx{
+	width:1200px;
+	height:80px;
+/*	border:1px solid red;*/
+}
+.floor{
+	background: #FFF6F4;
+}

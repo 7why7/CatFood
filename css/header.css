@@ -1,0 +1,99 @@
+	header{	
+		height:80px;
+		border:1px solid red;
+	}
+	.header_1{
+		width:100%;
+		height:30px;
+		background:#A17B84;
+	}
+	.myLogo{
+		float:left;
+		margin-left:150px;
+		display:box;
+	}
+	.myLogo>img{
+		border-radius: 20px;
+		height: 30px;
+		width: 60px;
+	}
+	.header_1>.hd_input{
+		float:right;
+		margin-right:60px;
+	}
+	.hd_input>.divSs{
+		line-height: 17px;
+		margin-top: 4px;
+		width: 223px;
+		border-radius: 10px;
+		outline: none;
+		height: 16px;
+		margin-right:8px;
+	}
+	.hd_input>a>img{
+		width:26px;
+		float: right;
+		margin-top: 4px;
+	}
+	.header_1>#login{
+		float:right;
+		width:400px;
+	}
+	#login>span{
+		color:white;
+		line-height:30px;
+		font-size:15px;
+	}
+	#zhuce>a,#denglu>a,#zhuxiao>a,#dengluOk>a{
+		color:white;
+		line-height:30px;
+		font-size:15px;d
+	}
+	.header_2{
+		width:100%;
+		height:50px;
+		background:#E94E65;
+		display:flex;
+		justify-content:center;
+	}
+	.header_2 a{
+		color:white;
+		font-size:20px;
+		line-height:50px;
+		margin: 0 100px;
+	}
+.header_2 .xl_cd{
+    position: relative;
+/*    border: 1px solid red;*/
+    background-color: #E94E65;
+    color: white;
+    width: 133px;
+    margin-left: 66px;
+	border-radius: 5px;
+	z-index:100;
+	margin-top:-1px;
+}
+.header_2 .xl_bt{
+	height:50px;
+	overflow:hidden;
+	transition:all .5s linear;
+}
+.header_2 .xl_bt:hover{
+	height:222px;
+}
+.header_2 .xl_cd>li>a{
+	margin:10px;
+    font-size: 17px;
+	font-family: serif;
+	line-height:40px;
+	transition:all .3s linear; 
+}
+.header_2 .xl_cd>li>a:hover{
+	color:black;
+}
+#zhuxiao{
+	color:white;
+}
+#dengluOk:hover{
+	color:white;
+}

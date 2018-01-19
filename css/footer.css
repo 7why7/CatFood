@@ -1,0 +1,31 @@
+footer{
+	display:flex;
+	justify-content:center;
+	background:#2D2D2D;
+	height:180px;
+}
+.footer_all{
+	margin:0 80px;
+}
+footer .footer_all h6{
+	color: gray;
+	font-size: 18px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+footer .footer_all a{
+	font-size:10px;
+	color:#898979;
+	text-decoration:none;
+	transition-duration:0.2s;
+	display:block;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+footer .footer_all a:hover{
+	color:#E94E65;
+}
+.myWxLogo{
+	width:100px;
+	height:100px;
+}

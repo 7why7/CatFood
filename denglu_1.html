@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/header.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <style>
+	.section{
+		height:672px;
+		width:1200px;
+		margin:0 auto;
+		background:url(img/dengluBackground.jpg);
+		background-position: 0px 70px;
+		background-repeat: no-repeat;
+	}
+	#dl_denglu{
+		width: 100px;
+		height: 39px;
+		margin-left: 10px;
+		margin-top: -25px;
+		border-radius: 16px;
+		color: #A17B84;
+		font-size: 17px;
+		font-weight: bold;
+		border: 2px solid #A17B84;
+	}
+	.section>h1{
+		margin:50px;
+		color:black;
+		font-family: serif;
+		margin-bottom:200px;
+	}
+	.section>h1>a:hover{
+		color:#E94E65;
+		transition:all .3s linear;
+	}
+	.section>div{
+		margin: 40px;
+		font-size: 20px;
+		color: #B94055;
+		font-weight: bold;
+	}
+	.section>div>input{
+		border-radius: 20px;
+		height: 23px;
+		width: 203px;
+/*		border: 2px solid #A17B84;*/
+	}
+	#dl_h1:after,#dl_h1:before{
+	content: "";
+    background: #E94E65;
+    width: 365px;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+	}
+	.section>.error_span{
+		margin-top:-40px;
+	}
+  </style>
+ </head>
+ <body>
+ <div class="main">
+	<div style="width:1200px;height:80px;">
+		<header id="header" class="clear">
+		</header>
+	</div>
+<!-- 	主体部分 -->
+	<div class="section">
+		<h1 id="dl_h1">欢迎来到登录页面/<a href="index.html">返回首页</a></h1>
+		<div>用户名称：<input id="uname" type="text"><br><br><br></div>
+		<div>用户密码：<input id="upwd" type="password"><br><br><br></div>
+		<div class="error_span"><span id="judge"></span><br></div>
+		<div><input id="dl_denglu" type="button" value="登录"></div>
+	</div>
+	<footer id="footer">
+	</footer>
+	</div>
+	 <script src="js/jquery.js"></script>
+	 <script src="js/header.js"></script>
+	 <script src="js/footer.js"></script>
+	 <script>
+		$("#dl_denglu").click(function(){
+			var uname=$("#uname").val();
+			var upwd=$("#upwd").val();
+//			console.log(uname,pswd);
+			$.ajax({
+				type:"GET",
+				url:"data/denglu_1.php",
+				data:{uname:uname,upwd:upwd},
+				success:function(data){
+					if(data.code<=0){
+						$("#judge").html(data.msg);
+					}else if(data.code>0){
+						alert("登录成功");
+						location="index.html";
+					}
+				},
+				error:function(){alert("网络连接错误")}
+			});
+		});
+	 </script>
+ </body>
+</html>
